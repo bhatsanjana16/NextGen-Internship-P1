@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import './Register.css';
 
 const Register = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState(''); // State to handle error message
+    const [error, setError] = useState(''); 
     const navigate = useNavigate();
 
     const handleRegister = async (e) => {
         e.preventDefault();
-        setError(''); // Clear any previous errors
+        setError(''); 
         try {
             const { data } = await axios.post('http://localhost:5000/api/auth/register', { name, email, password });
             localStorage.setItem('token', data.token);
-            navigate('/login'); // Redirect to login if registration is successful
+            navigate('/login'); 
         } catch (error) {
             if (error.response && error.response.data && error.response.data.message) {
-                setError(error.response.data.message); // Set error message if registration fails
+                setError(error.response.data.message); 
             } else {
                 setError('An unexpected error occurred. Please try again later.');
             }
@@ -65,7 +66,7 @@ const Register = () => {
                 <button type="submit" className="btn btn-primary">Register</button>
             </form>
             {error && <p className="text-danger mt-3">{error}</p>} {/* Display error message */}
-            <p>Already have an account? <a href="/">Login</a></p>
+            <p className='para1'>Already have an account? <a href="/login">Login</a></p>
         </div>
     );
 };

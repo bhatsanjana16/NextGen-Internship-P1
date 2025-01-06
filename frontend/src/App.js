@@ -7,6 +7,9 @@ import Navbar from './components/Navbar';
 import DocumentForm from './components/DocumentForm';
 import DocumentDetails from './components/DocumentDetails';
 import LandingPage from './components/LandingPage';
+import './App.css';
+import Documents from './components/Documents';
+
 
 function App() {
     return (
@@ -19,6 +22,7 @@ function App() {
                 <Route path="/dashboard" element={<Dashboard/>} />
                 <Route path="/document/:id" element={<DocumentDetails/>} />
                 <Route path="/document/new" element={<DocumentForm />} />
+                <Route path="/documents" element={<Documents />} />
             </Routes>
         </Router>
     );

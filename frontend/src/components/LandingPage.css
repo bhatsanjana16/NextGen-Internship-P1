@@ -1,0 +1,81 @@
+.landing-page {
+    background-color: #f0f2f5; 
+    padding: 60px 0;
+  }
+  
+  .landing-page .hero {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .landing-page .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .landing-page .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .landing-page .hero button {
+    background-color: white;
+    color: #007bff;
+    border: 1px solid white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .landing-page .hero button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  .mt-4 {
+    margin-top: 1.5rem; 
+  }
+  
+  .button-group {
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem; 
+  }
+  
+  .btn {
+    flex: 1; 
+    text-align: center; 
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    max-width: 200px; 
+  }
+  
+  .btn-primary {
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #545b62;
+    transform: translateY(-2px);
+  }
+  
+  

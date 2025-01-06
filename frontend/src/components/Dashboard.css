@@ -1,0 +1,99 @@
+/* Body and full-page styling */
+body {
+  margin: 150px 10px;
+  padding: 10px;
+  background-color: #bdc6e6; /* Background color for the page */
+  display:inline-block;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Full height of the viewport */
+  width: 1000%;
+}
+
+/* Dashboard container */
+.container {
+  background-color: #e2ddde; /* White background for dashboard */
+  margin: 0;
+  padding: 10px;
+  width: 200%; /* Make container responsive and wide */
+  max-width: 2200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+/* .dashboard-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+} */
+
+.dashboard-header h2 {
+  color: #333;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 2px 5px;
+}
+
+/* Dashboard cards */
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between cards */
+}
+
+/* Individual card styling */
+.dashboard-card {
+  background-color: #b1a8c3; /* A lighter background for card */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Adjust card width for responsiveness */
+}
+
+/* Card Title */
+.dashboard-card h5 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Card Text */
+.dashboard-card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Button styles */
+.dashboard-card .btn {
+  background-color: #6396ce;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-card .btn:hover {
+  background-color: #287cd0;
+}
+
+.custom-btn {
+  background-color: #ef84bb; 
+  border: none;
+  padding: 10px 15px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #9b5280;
+}
+

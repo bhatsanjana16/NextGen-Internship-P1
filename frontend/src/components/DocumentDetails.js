@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { getDocumentById, updateDocument, deleteDocument } from '../services/documentService';
 import { io } from 'socket.io-client';
+import './DocumentDetails.css';
 
 
 
@@ -87,7 +88,7 @@ const DocumentDetails = () => {
             {message && <div className="alert alert-success mt-3">{message}</div>}
             <h2 className="mb-4">Document Details</h2>
             <div className="form-group">
-                <label htmlFor="title">Title:</label>
+                <label htmlFor="title" className='title1'>Title:</label>
                 <input
                     type="text"
                     id="title"
@@ -99,7 +100,7 @@ const DocumentDetails = () => {
                 />
             </div>
             <div className="form-group mt-3">
-                <label htmlFor="content">Content:</label>
+                <label htmlFor="content" className='content1'>Content:</label>
                 <textarea
                     id="content"
                     className="form-control"
